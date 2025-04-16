@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joe P. Samples's Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="profile/1.svg" alt="User" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Joe P. Samples">Joe P. Samples</h1>
+          <p class="title">Ph.D. Candidate in Neuroscience</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+        </button>
+      </div>
+      <div class="sidebar-info_more" data-sidebar-more>
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:joe.samples@utsa.edu" class="contact-link">joe.samples@utsa.edu</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+12105552225" class="contact-link">(210) 555-2225</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>San Antonio, TX 78249</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Teaching</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Awards</button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About Me</h2>
+        </header>
+        <section class="about-text">
+          <h2>👋 Hi, I'm Joe P. Samples</h2>
+          <p>Joe P. Samples is a dedicated researcher with a Ph.D. in Neuroscience and extensive experience in cell and structural biology. He has a strong background in neurobiology, respiratory biology, and cell and molecular biology, with a focus on learning and memory, cell adhesion, and cancer biology. He has held research and teaching positions at prestigious institutions and has been recognized with multiple honors and awards.</p>
+          <h2>🔬 My Research Focus</h2>
+          <div id="research-interests-container">
+            <div class="research-interest">
+              <p class="research-field">Neurobiology</p>
+              <p class="research-description">Learning and memory, long term potentiation</p>
+            </div>
+            <div class="research-interest">
+              <p class="research-field">Respiratory Biology</p>
+              <p class="research-description"></p>
+            </div>
+            <div class="research-interest">
+              <p class="research-field">Physiology of Vision</p>
+              <p class="research-description"></p>
+            </div>
+            <div class="research-interest">
+              <p class="research-field">Cell and Molecular Biology</p>
+              <p class="research-description">Cell adhesion and cancer biology</p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="education" data-page="education">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="book-outline"></ion-icon> Education
+          </h2>
+        </header>
+        <section class="timeline" id="education-container">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Texas Health Science Center at San Antonio</h4>
+              <span class="graduation-date">1996</span>
+              <p class="degree">Postdoc.</p>
+              <p class="field">Cell & Structural Biology</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Tulane University, New Orleans, LA</h4>
+              <span class="graduation-date">1995</span>
+              <p class="degree">Ph.D.</p>
+              <p class="field">Neuroscience Interdisciplinary Training Program</p>
+              <p class="thesis"><strong>Thesis:</strong> Induced Regeneration and Gene Expression in the Chick Limb Bud – Examined developmental phenomena and stage-related barriers to regeneration in higher vertebrates, focusing on Msx-1 and HoxD homeobox expression.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Tulane University, New Orleans, LA</h4>
+              <span class="graduation-date">1992</span>
+              <p class="degree">M.S.</p>
+              <p class="field">Biomedical Engineering</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">University of Texas at San Antonio</h4>
+              <span class="graduation-date">1986</span>
+              <p class="degree">B.S.</p>
+              <p class="field">Psychobiology</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="research" data-page="research">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="flask-outline"></ion-icon> Work Experience
+          </h2>
+        </header>
+        <section class="timeline" id="experience-container">
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Undergraduate Research Assistant</h4>
+              <span class="duration">2001-2003</span>
+              <p class="institution">University of Texas at San Antonio</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>MBRS-RISE Research Training Program</li>
+                  <li>Center for Research and Training in the Sciences</li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Teaching Assistant, Introductory Biology Laboratory</h4>
+              <span class="duration">1999-2001</span>
+              <p class="institution">University of Texas at San Antonio</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>Department of Biology</li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Undergraduate Research Assistant</h4>
+              <span class="duration">1997-1999</span>
+              <p class="institution">University of Texas at San Antonio</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>MARC U*STAR Honors Research Training Program</li>
+                  <li>Center for Research and Training in the Sciences</li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Assistant</h4>
+              <span class="duration">2000</span>
+              <p class="institution">University of California, Los Angeles</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>UCLA Summer AWU-DOE Summer Research Program</li>
+                  <li>Department of Neurobiology</li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Research Assistant</h4>
+              <span class="duration">1994-1995</span>
+              <p class="institution">University of Texas Health Science Center at San Antonio</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>Department of Cell and Structural Biology</li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Quality Assurance Analyst</h4>
+              <span class="duration">1992-1993</span>
+              <p class="institution">DGMMM Laboratories</p>
+              <div class="description-container">
+                <ul class="description-list">
+                  <li>Quality Assurance Department</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="publications" data-page="publications">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="document-text-outline"></ion-icon> Publications
+          </h2>
+        </header>
+        <section class="timeline">
+          <ol class="timeline-list" id="publications-container">
+            <li class="timeline-item publication-item">
+              <h4 class="h4 publication-title">Extraction of RNA from single frozen sections</h4>
+              <p class="publication-journal">J Pathol.</p>
+              <p class="publication-year">1998</p>
+              <p class="publication-authors">Taylor GP, Troyer DA, Giambernardi TA, Klebe RJ</p>
+            </li>
+            <li class="timeline-item publication-item">
+              <h4 class="h4 publication-title">FGF-2 induces regeneration of the Chick limb bud</h4>
+              <p class="publication-journal">Dev. Biol.</p>
+              <p class="publication-year">1994</p>
+              <p class="publication-authors">Taylor GP, Anderson RA, Reginelli AD, Muneoka K</p>
+            </li>
+            <li class="timeline-item publication-item">
+              <h4 class="h4 publication-title">Conversion of anterior limb bud cells to ZPA signaling cells in vitro and in vivo</h4>
+              <p class="publication-journal">Dev. Biol.</p>
+              <p class="publication-year">1994</p>
+              <p class="publication-authors">Anderson R, Landry M, Reginelli A, Taylor G, Achkar C, Gudas L, Muneoka K</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="skills" data-page="skills">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="build-outline"></ion-icon> Technical Skills
+          </h2>
+        </header>
+        <section class="skills-container" id="technical-skills-container">
+          <div class="skills-group">
+            <h3 class="skills-category">Technical Skills</h3>
+            <ul class="skills-list">
+              <li class="skill-item">RT-PCR</li>
+              <li class="skill-item">Confocal Microscopy</li>
+              <li class="skill-item">Hippocampal Field Potential Recording</li>
+              <li class="skill-item">Genomic and plasmid DNA, and RNA isolation and purification</li>
+              <li class="skill-item">Western Blotting</li>
+              <li class="skill-item">Morris Maze – Behavioral testing</li>
+              <li class="skill-item">Tissue Culture – Primary and Cell Line</li>
+              <li class="skill-item">Agarose and acrylamide gel electrophoresis</li>
+              <li class="skill-item">RNase protection assays</li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <article class="teaching" data-page="teaching">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="school-outline"></ion-icon> Teaching Experience
+          </h2>
+        </header>
+        <section class="timeline" id="teaching-container">
+          <ol class="timeline-list">
+            <li class="timeline-item teaching-item">
+              <h4 class="h4 teaching-role">Course Instructor</h4>
+              <p class="teaching-institution">University of Texas at San Antonio</p>
+              <div class="courses-container">
+                <h4>Courses:</h4>
+                <ul>
+                  <li>Professional Skills Development for Graduate Students</li>
+                  <li>Introductory Genetics lecture</li>
+                  <li>Advanced Neurobiology Laboratory</li>
+                  <li>Neurobiology Laboratory</li>
+                  <li>General Biology Laboratory</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+
+      <article class="awards" data-page="awards">
+        <header>
+          <h2 class="h2 article-title">
+            <ion-icon name="trophy-outline"></ion-icon> Honors & Awards
+          </h2>
+        </header>
+        <section class="timeline" id="awards-container">
+          <ol class="timeline-list">
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">Graduated Magna Cum Laude, UTSA</h4>
+              <p class="award-year">2008</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">Gold Key National Honor Society</h4>
+              <p class="award-year">2008</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">Minority Access to Research Careers - Undergraduate Student Training for Academic Research (MARC-U*STAR) Trainee</h4>
+              <p class="award-year">2006-2008</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">Annual Biomedical Research Conference for Minority Students Travel Award</h4>
+              <p class="award-year">2006, 2007</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">Winner, Society for the Advancement of Chicanos and Native Americans in Science, Graduate Poster Competition</h4>
+              <p class="award-year">2006</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">Minority Biomedical Research Support - Research Initiative for Scientific Enhancement (MBRS-RISE) Trainee</h4>
+              <p class="award-year">2005-2006</p>
+            </li>
+            <li class="timeline-item award-item">
+              <h4 class="h4 award-name">University of California Berkeley Summer Research Fellowship</h4>
+              <p class="award-year">2005</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    'use strict';
+
+    // Toggle sidebar contacts
+    const sidebar = document.querySelector("[data-sidebar]");
+    const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+    const sidebarMore = document.querySelector("[data-sidebar-more]");
+
+    sidebarBtn.addEventListener("click", function () {
+      sidebarMore.classList.toggle("active");
+      sidebarBtn.querySelector("span").textContent = sidebarMore.classList.contains("active") ? "Hide Contacts" : "Show Contacts";
+    });
+
+    // Handle navigation links
+    const navigationLinks = document.querySelectorAll("[data-nav-link]");
+    const pages = document.querySelectorAll("[data-page]");
+
+    navigationLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navigationLinks.forEach(navLink => navLink.classList.remove("active"));
+        this.classList.add("active");
+
+        const pageName = this.textContent.toLowerCase().trim();
+        pages.forEach(page => page.classList.remove("active"));
+        const targetPage = document.querySelector(`[data-page="${pageName}"]`);
+        if (targetPage) {
+          targetPage.classList.add("active");
+          window.scrollTo(0, 0);
+        }
+      });
+    });
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
